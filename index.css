@@ -42,6 +42,8 @@ The designs were created to the following widths:
 }
 
 
+
+
 body {
     background-color: rgb(255, 243, 243);
     margin: auto;
@@ -134,6 +136,7 @@ form {
     background: linear-gradient( to left, hsl(0, 60%, 68%), hsl(0, 100%, 89%));
     position: absolute;
     height: 100%;
+    top: 0;
     right: 0;
     cursor: pointer;
     box-shadow: 5px 5px 15px 1px hsl(0, 67%, 88%);
@@ -218,4 +221,12 @@ form {
         line-height: 1.7rem;
         margin-bottom: 2rem;
     }
+
+    
 }
+
+@-moz-document url-prefix() { 
+    #submit-btn {
+        top: 0;
+    }
+  }
